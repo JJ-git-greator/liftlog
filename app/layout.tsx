@@ -7,7 +7,20 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "리프트로그",
-  description: "12주 축분할 트레이닝 트래커",
+  description: "12주 축분할 트레이닝 트래커 — 매일 운동 스케줄 확인, 무게 기록, 영상 가이드",
+  openGraph: {
+    title: "리프트로그",
+    description: "12주 축분할 트레이닝 트래커 — 매일 운동 스케줄 확인, 무게 기록, 영상 가이드",
+    type: "website",
+    locale: "ko_KR",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "리프트로그" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "리프트로그",
+    description: "12주 축분할 트레이닝 트래커",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
